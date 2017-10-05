@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{C8B659A7-2EDA-4D32-BA1E-96BE60B8450B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileRestAPI", "FileRestAPI\FileRestAPI.csproj", "{878BEA8B-12EB-435F-B5EA-3C05C82C098D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8B659A7-2EDA-4D32-BA1E-96BE60B8450B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8B659A7-2EDA-4D32-BA1E-96BE60B8450B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8B659A7-2EDA-4D32-BA1E-96BE60B8450B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8B659A7-2EDA-4D32-BA1E-96BE60B8450B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{878BEA8B-12EB-435F-B5EA-3C05C82C098D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{878BEA8B-12EB-435F-B5EA-3C05C82C098D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{878BEA8B-12EB-435F-B5EA-3C05C82C098D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{878BEA8B-12EB-435F-B5EA-3C05C82C098D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CB8F2655-00F8-44AE-B6E3-0609E2BEE980}
+	EndGlobalSection
+EndGlobal
