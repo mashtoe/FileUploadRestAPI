@@ -7,5 +7,6 @@ namespace DAL.Entities
     public class Product
     {
         public string b64Image { get; set; }
+        public string imgName { get; set; }
     }
 }

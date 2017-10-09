@@ -34,7 +34,9 @@ namespace FileRestAPI.Controllers
             if (value != null)
             {
                 var bytes = Convert.FromBase64String(value.b64Image);
-                using (var imageFile = new FileStream("D:/lol.jpg", FileMode.Create))
+                
+                
+                using (var imageFile = new FileStream($"D:/{value.imgName}", FileMode.Create))
                 {
                     imageFile.Write(bytes, 0, bytes.Length);
                     imageFile.Flush();
