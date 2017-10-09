@@ -1,11 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using DAL.Entities;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FileRestAPI.Controllers
 {
+    [EnableCors("MyPolicy")]
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
@@ -25,8 +29,21 @@ namespace FileRestAPI.Controllers
 
         // POST api/values
         [HttpPost]
-        public void Post([FromBody]string value)
+        public IActionResult Post([FromBody]Product value)
         {
+            if (value != null)
+            {
+                var bytes = Convert.FromBase64String(value.b64Image);
+                using (var imageFile = new FileStream("D:/lol.jpg", FileMode.Create))
+                {
+                    imageFile.Write(bytes, 0, bytes.Length);
+                    imageFile.Flush();
+                    return StatusCode(200, "tjek");
+                }
+            }
+            return StatusCode(404, "String was null");
+
+
         }
 
         // PUT api/values/5

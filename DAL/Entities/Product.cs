@@ -6,10 +6,6 @@ namespace DAL.Entities
 {
     public class Product
     {
-        public int Id { get; set; }
-
-        public string Name { get; set; }
-
-        public byte[] ProductImage { get; set; }
+        public string b64Image { get; set; }
     }
 }
